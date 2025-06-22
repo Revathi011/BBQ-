@@ -41,65 +41,46 @@ width: 220px ;
 display: inline block;
 padding-bottom: 5px;
 }
+.srch{
+    padding: 20px;
+}
 .imgg{
         padding-bottom: 5px;
     }
     .btn1 a{
-         text-align: center;
-         color: white;
+        color: black;
     }
-.btn1{
-        
-        padding: 6px;
-        border: none;
-        outline: none;
-        color: #FFF;
-        cursor: pointer;
-        position: relative;
-        z-index:0;
-        border-radius: 12px;
+    .btn2 a{
+        color: black;
     }
-.btn1::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    left: 0;
-    right: 0;
-    border-radius: 10px;
+    .btn1{
+	display: inline-block;
+	color: black;
+	background: transparent;
+	font-size: 15px;
+	padding: 6px 8px;
+	font-weight: 500;
+	line-height: 24px;
+	border-radius: 30px;
+	transition: ease .40s;
 }
-.btn1::before{
-    content: "";
-    background:linear-gradient(
-        45deg,
-        #FF0000,#FF7300, #FFFB00, #48FF00,
-        #00FFD5,#002BFF, #FF00C8, #FF0000
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(8px);
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    opacity: 1;
+.btn1:hover{
+	transform: scale(1.1);
 }
-.btn1:hover::before{
-    opacity: 1;
+ .btn2{
+	display: inline-block;
+	color: black;
+	background: transparent;
+	font-size: 15px;
+	padding: 6px 8px;
+	font-weight: 500;
+	line-height: 24px;
+	border-radius: 30px;
+	transition: ease .40s;
 }
-.btn1:active::after{
-    background: transparent;
+.btn2:hover{
+	transform: scale(1.1);
 }
-.btn1:active{
-    color: #000;
-    font-weight: bold;
-}
-
     .container2{
          display: flex;
          justify-content: space-evenly;
