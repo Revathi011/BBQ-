@@ -123,6 +123,10 @@ input{
     padding: 50px;
 }
 @media(max-width:600px){
+    .srch{
+        height: 20px;
+        width: 250px;
+    }
     .box1 img{
         width: 250px;
         height: 250px;
