@@ -56,6 +56,38 @@ h2{
 .home a:hover{
 	transform: scale(1.1);
 }
+.name td{
+    font-size: 30px;
+}
+.name td input{
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+     margin: 4px;
+}
+.age td{
+    font-size: 30px;
+}
+.age td input{
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+     margin: 4px;
+}
+.add td{
+    font-size: 30px;
+}
+.add td input{
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+    margin: 4px;
+}
+.ph td{
+    font-size: 30px;
+}
+.ph td input{
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+     margin: 4px;
+}
 @media(max-width:600px){
     .image1 img {
         width: 350px;
