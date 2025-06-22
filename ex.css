@@ -1,0 +1,198 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.box6{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+
+}
+ul,li{
+    color: gray;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+}
+.box1{
+    background-color: white;
+}
+.box2{
+    color: black;
+    margin: 10px;
+    text-align: justify;
+}
+
+li:hover{
+    color: white;
+}
+ul{
+margin-right: 30px;
+}
+.box3{
+color: black;
+border-color: black;
+border-width: 5px;
+border-style: solid;
+width: 220px ;
+display: inline block;
+padding-bottom: 5px;
+}
+.imgg{
+        padding-bottom: 5px;
+    }
+    .btn1 a{
+         text-align: center;
+         color: white;
+    }
+.btn1{
+        
+        padding: 6px;
+        border: none;
+        outline: none;
+        color: #FFF;
+        cursor: pointer;
+        position: relative;
+        z-index:0;
+        border-radius: 12px;
+    }
+.btn1::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
+.btn1::before{
+    content: "";
+    background:linear-gradient(
+        45deg,
+        #FF0000,#FF7300, #FFFB00, #48FF00,
+        #00FFD5,#002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+.btn1:hover::before{
+    opacity: 1;
+}
+.btn1:active::after{
+    background: transparent;
+}
+.btn1:active{
+    color: #000;
+    font-weight: bold;
+}
+
+    .container2{
+         display: flex;
+         justify-content: space-evenly;
+         flex-direction: row;
+         padding: 50px;
+    }
+.box3{
+    color: black;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 220px;
+   
+}
+.imgg{
+    color: black;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 220px;
+    
+}
+
+h2{
+    color: black;
+}
+.box4{
+    color: black;
+}
+.box5{
+    background-color: black;
+    color: white; 
+    padding: 20px;
+     
+}
+input{
+    width: 60%;
+}
+.searchbar{
+    padding: 50px;
+}
+@media(max-width:600px){
+    .box1 img{
+        width: 250px;
+        height: 250px;
+    }
+    p{
+        text-align: justify;
+    }
+    .box3 img{
+         width: 220px;
+        height: 250px;
+    }
+    .box3 p{
+        padding: 10px;
+        margin: 0;
+    }
+    .imgg img{
+         width: 220px;
+        height: 250px;
+    } 
+    .para {
+        padding: 10px;
+        margin: 0;
+    }
+    .box3{
+        padding-bottom: 5px;
+    }
+    .imgg{
+        padding-bottom: 5px;
+    }
+    button{
+        background-color: transparent;
+        padding: 6px;
+        border-radius: 8px;
+       
+    }
+    button a{
+         color: black;
+    }
+    .box3{
+          margin:10px ;
+    }
+    .box5 p{
+        text-align: center;
+    }
+    .box5{
+        padding: 10px 0 10px 0;
+    }
+    .container2{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
